@@ -34,7 +34,7 @@ public class Main {
 			map.put(2, two);
 			map.put(3, tree);
 		
-		System.out.print( new Xmas().path(map, 1, 5));
+		System.out.print( new Xmas().path(map, 0, 5));
 	}
 	
 	/*
