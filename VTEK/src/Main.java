@@ -14,12 +14,12 @@ public class Main {
 		// TODO Auto-generated constructor stub
 	}
 	
-	private static final int[] GIVEN = { 1, 2, 3, 4, 6 };
+	private static final int[] GIVEN = { 1, 2, 3, 4, 6,20,12,6 };
 	
 	
 	
 	public static void main(String[] args) {
-		new SumsEqualTarget().find(GIVEN, 6);
+		new SumsEqualTarget().find(GIVEN, 20);
 		Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
 		List<Integer> one = new ArrayList<Integer>();
 		List<Integer> two = new ArrayList<Integer>();
@@ -34,7 +34,7 @@ public class Main {
 			map.put(2, two);
 			map.put(3, tree);
 		
-		System.out.print( new Xmas().path(map, 1, 4));
+		System.out.print( new Xmas().path(map, 1, 5));
 	}
 	
 	/*

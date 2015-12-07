@@ -21,14 +21,15 @@ public class Xmas {
 				way.add(begin);
 				map.remove(begin);
 				for(Integer node:nodes){
-					return path(map,node,end);
+					path(map,node,end);
 				}
+				map.put(begin, nodes);
 			}
 			
 		}else{
-			way.clear();
+			way.remove(way.size()-1);
 		}
-		return null;
+		return way;
 	}
 	
 }
